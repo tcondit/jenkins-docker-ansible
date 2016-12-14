@@ -39,14 +39,14 @@
   <builders>
     <hudson.tasks.Shell>
       <command>
-sudo docker build -t 192.168.50.91:5000/{{ item }}-tests docker/tests/
-sudo docker push 192.168.50.91:5000/{{ item }}-tests
+sudo docker build -t 54.89.175.43:5000/{{ item }}-tests docker/tests/
+sudo docker push 54.89.175.43:5000/{{ item }}-tests
 sudo docker run -t --rm \
   -v $PWD:/source \
   -v /data/.ivy2:/root/.ivy2/cache \
-  192.168.50.91:5000/{{ item }}-tests
-sudo docker build -t 192.168.50.91:5000/{{ item }} .
-sudo docker push 192.168.50.91:5000/{{ item }}</command>
+  54.89.175.43:5000/{{ item }}-tests
+sudo docker build -t 54.89.175.43:5000/{{ item }} .
+sudo docker push 54.89.175.43:5000/{{ item }}</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
