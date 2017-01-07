@@ -1,0 +1,21 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "dummy"
+
+  config.vm.provider :aws do |aws, override|
+    aws.access_key_id = "AKIAJKFG2KALFOJ7FQGQ"
+    aws.secret_access_key = "YUTVoCFyNN0MZlucLlGgf5G5uzk3i+1UNWzrE6vV"
+
+#    aws.session_token = "SESSION TOKEN"
+    aws.keypair_name = "hashicorp_2016_11"
+
+    aws.ami = "ami-40d28157"
+
+    override.ssh.username = "ubuntu"
+    override.ssh.private_key_path = "~/Projects/terraform/keys/hashicorp_2016_11.pem"
+  end
+end

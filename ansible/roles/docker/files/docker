@@ -1,1 +1,1 @@
-DOCKER_OPTS="$DOCKER_OPTS --insecure-registry 54.89.175.43:5000"
+DOCKER_OPTS="$DOCKER_OPTS --insecure-registry 54.162.64.21:5000"

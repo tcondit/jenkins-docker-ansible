@@ -1,3 +1,2 @@
 [books-service]
-54.147.153.243 ansible_ssh_private_key_file=~/Projects/terraform/keys/hashicorp_2016_11.pem
-
+54.147.129.33 ansible_ssh_private_key_file=~/Projects/terraform/keys/hashicorp_2016_11.pem

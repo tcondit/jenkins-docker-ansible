@@ -1,0 +1,1 @@
+/Users/izz731/Projects/gsd-tech-books/brain-droppings/NOTES-jenkins-docker-ansible.md
